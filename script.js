@@ -26,11 +26,7 @@ function countKmi() {
         </div>`
     }
   
-    table2DOM.innerHTML = `
-    <div class="kmi">
-        <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
-       
-    </div>`
+ 
 }
 
 
