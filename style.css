@@ -55,10 +55,20 @@ data>.ugi{
 
 }
 .red{
-    background-color: rgb(240, 114, 114);
+    color:  rgb(64, 6, 6);
+    font-size:1rem ;
 }
 .green{
-    background-color: rgb(117, 183, 117);
+    color: rgb(7, 69, 7);
+    font-size:2.5rem ;
+}
+.blue{
+    color:blue;
+    font-size:1.5rem ;
+
+}
+.violet{
+    color:rgb(60, 5, 80)
 }
 
 
