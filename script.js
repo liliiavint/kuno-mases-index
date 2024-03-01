@@ -18,15 +18,13 @@ function countKmi() {
             
         </div>`
     }
-    if(result < 33){
-       table2DOM.innerHTML = `
-        <div class="kmi green">
-            <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
-            
-        </div>`
-    }
+    
   
- 
+    table2DOM.innerHTML = `
+    <div class="kmi green">
+        <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
+       
+    </div>`
 }
 
 
