@@ -5,26 +5,44 @@ const btnscaicioDOM = document.querySelector(".btnscaicio");
 const kmiDOM = document.querySelector(".kmi");
 const table2DOM = document.querySelector(".table2");
 const btnclearDOM = document.querySelector(".clear");
-
+let HTML = '';
 function countKmi() {
     const names = nameDOM.value;
     const svori = parseFloat(svoriDOM.value);
     const ugi = parseFloat(ugiDOM.value);
     const result = svori / Math.pow(ugi / 100, 2);
-
-    const HTML = `
+    if(result > 33){
+        table2DOM.innerHTML = `
+        <div class="kmi red">
+            <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
+            
+        </div>`
+    }
+    if(result < 33){
+       table2DOM.innerHTML = `
+        <div class="kmi green">
+            <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
+            
+        </div>`
+    }
+  
+    table2DOM.innerHTML = `
     <div class="kmi">
         <p>KMI ${names} yra ${result.toFixed(2)}.</p>    
-        <button class="clear">Clear</button>
-    </div>`;
-    table2DOM.innerHTML += HTML;
+       
+    </div>`
 }
 
 
-btnscaicioDOM.addEventListener("click", countKmi);
-function clear(){
+btnscaicioDOM.addEventListener("click", function(){
+countKmi()
+
     
-}
+       
+    })
+const clear = ()=> table2DOM.innerHTML = `<div class="kmi">  </div>`;
+
+btnclearDOM.addEventListener("click", clear);
 
 
   

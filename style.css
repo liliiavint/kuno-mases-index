@@ -54,6 +54,12 @@ data>.ugi{
 .kmi>.btnreset{
 
 }
+.red{
+    background-color: rgb(240, 114, 114);
+}
+.green{
+    background-color: rgb(117, 183, 117);
+}
 
 
 
