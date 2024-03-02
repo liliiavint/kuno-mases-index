@@ -87,7 +87,8 @@ data>.ugi{
     height: 3rem;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 23px;
+    line-height: 30px;
 }
 h3{
     background-color: rgb(174, 174, 177);

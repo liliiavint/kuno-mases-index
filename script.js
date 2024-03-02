@@ -24,7 +24,7 @@ function countKmi() {
         klaidaDOM.innerHTML = `<p>Pateikite galiojantį aukštį ir svorį!</p>`;
     }else{
      if(result > 0 && result < 18.5){
-        HTML = `<p class=".blue">Nepakankamas </br>svoris</p> `;
+        HTML = `<p class="blue">Nepakankamas </br>svoris</p> `;
     }else if(result > 18.5 && result < 25){
         HTML = `<p class="green">Sveikas svoris</p>`;
     }else if(result > 25 && result < 30){
