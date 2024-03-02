@@ -7,7 +7,7 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    font-family: 'Comfortaa',
         sans-serif;
     margin-left: 3rem;
     
@@ -16,8 +16,7 @@ body {
     
     display:flex;
     justify-content: center;
-    flex-direction: column; 
-  
+   
 }
 
 /*Table1*/
@@ -26,9 +25,29 @@ body {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
+    margin-top: 50px;
+  
+    
 }
-.data>.name{
+.inuickspan{
+    color: #575757;
+    font-size: 1rem;
+
+}
+.data>.inputarrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:2rem;
+    
+
+}
+.inputarrow>.formainput{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    
 
 }
 data>.ugi{
@@ -51,27 +70,83 @@ data>.ugi{
     flex-direction: column;
     gap: 3rem;
 }
-.kmi>.btnreset{
-
-}
-.red{
-    color:  rgb(64, 6, 6);
-    font-size:5rem ;
+.data>.btnresult{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    gap: 2rem;
+    
+    
     
 }
-.green{
-    color: rgb(7, 69, 7);
-    font-size:2.5rem ;
+.btnresult>.clear, 
+.btnscaicio{
+    background-color: rgb(174, 174, 177);
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
 }
-.blue{
-    color:blue;
-    font-size:1.5rem ;
+h3{
+    background-color: rgb(174, 174, 177);
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 25px;
+    line-height: 40px;
+}
+
+.halfcircleWord{
 
 }
-.violet{
-    color:rgb(60, 5, 80);
-    font-size:6.5rem ;
+
+.halfcirkle{
+    position:relative;
+
 }
+.word{
+    position: relative;
+}
+  
+.blue{
+    color:rgb(31, 31, 168);
+    font-size:15px;
+    font-weight: bolder;
+    position: absolute;
+    top:-69px;
+    left:  30px;
+    transform: rotate(33deg);
+    }
+.green{
+    color: green;
+    font-size:15px;
+    font-weight: bolder;
+    position: absolute;
+    top:-110px;
+    left: 90px;
+    transform: rotate(65deg);
+    }
+.yellow{
+    color: rgb(249, 128, 7);
+    font-size:15px;
+    font-weight: bolder;
+    position: absolute;
+    top:-95px;
+    left:  185px;
+    transform: rotate(110deg);
+    }
+.red{
+    color: rgb(117, 7, 7);
+    font-size:15px;
+    font-weight: bolder;
+    position: absolute;
+    top:-60px;
+    left:  240px;
+    transform: rotate(150deg);
+    }
 
 
 
