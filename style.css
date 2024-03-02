@@ -41,14 +41,14 @@ body {
     justify-content: space-around;
     gap:2rem;
     
+    
 
 }
 .inputarrow>.formainput{
     display: flex;
     flex-direction: column;
-   justify-content: space-around;
-    
-
+    height: 60px;
+    width: 200px;
 }
 data>.ugi{
 
